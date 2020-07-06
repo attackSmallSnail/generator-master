@@ -3,12 +3,7 @@
   <component name="issues">
     <option name="index">
       <map>
-        <entry key="/Dummy.txt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="/a.dummy">
+        <entry key="$PROJECT_DIR$/LICENSE">
           <value>
             <set />
           </value>
@@ -18,72 +13,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/application/Main.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/entity/Configuration.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/ControllerTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/DaoTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/InterfaceTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/MapperTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/ReqTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/ServiceTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/task/VoTask.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/utils/FileUtil.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/utils/FreemarketConfigUtils.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/utils/GeneratorUtil.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/greedystar/generator/utils/TaskQueue.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/com/ylz/excel/controller/DrugListManPojoController.java">
           <value>
             <set />
           </value>
@@ -93,12 +23,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/dao/DrugListManPojoMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/pojo/DrugListManPojo.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/req/DrugListManPojoReq.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/service/DrugListManPojoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/service/impl/DrugListManPojoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/ylz/test/vo/DrugListManPojoVo.java">
           <value>
             <set />
           </value>
@@ -148,72 +98,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-mapper/src/main/java/com/ylz/sxpt/dao/DrugListManHeadPojoMapper.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-mapper/src/main/java/com/ylz/sxpt/dao/DrugListManPojoMapper.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-mapper/src/main/resources/mapper/DrugListManHeadPojoMapper.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-mapper/src/main/resources/mapper/DrugListManPojoMapper.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-platform/src/main/java/com/ylz/sxpt/controller/ZhDrugListController.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-pojo/src/main/java/com/ylz/sxpt/pojo/DrugListManHeadPojo.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-pojo/src/main/java/com/ylz/sxpt/pojo/DrugListManPojo.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-pojo/src/main/java/com/ylz/sxpt/req/DrugListManPojo.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-pojo/src/main/java/com/ylz/sxpt/req/DrugListManReq.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-pojo/src/main/java/com/ylz/sxpt/vo/DrugListManVo.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-service/src/main/java/com/ylz/sxpt/service/DrugListManHeadPojoService.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-service/src/main/java/com/ylz/sxpt/service/DrugListManPojoService.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-service/src/main/java/com/ylz/sxpt/service/impl/DrugListManHeadPojoServiceImpl.java">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../svn/ylz/zhygjc/zhuhai-service/src/main/java/com/ylz/sxpt/service/impl/DrugListManPojoServiceImpl.java">
+        <entry key="$PROJECT_DIR$/src/main/resources/mappers/DrugListManPojoMapper.xml">
           <value>
             <set />
           </value>
