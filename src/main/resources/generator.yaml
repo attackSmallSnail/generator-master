@@ -1,0 +1,19 @@
+db:
+  url: jdbc:oracle:thin:@127.0.0.1:1821:orcl
+  username: dss
+  password: dssadmin
+#db:
+#  url: jdbc:oracle:thin:@192.168.0.237:1521:orcl
+#  username: opensdk
+#  password: dssadmin
+author: lcw
+packageName: com.ylz.test
+path:
+  controller: controller
+  service: service.impl
+  interf: service
+  dao: dao
+  req: req
+  vo: vo
+  entity: pojo
+  mapper: mappers
