@@ -1,5 +1,6 @@
 package com.greedystar.generator.task;
 
+import com.greedystar.generator.entity.ColumnInfo;
 import com.greedystar.generator.task.base.AbstractTask;
 import com.greedystar.generator.utils.ConfigUtil;
 import com.greedystar.generator.utils.FileUtil;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -36,6 +38,7 @@ public class VoTask extends AbstractTask {
         voData.put("ClassName", className);
         voData.put("EntityName", StringUtil.firstToLowerCase(className));
         voData.put("ExtendClassName",className);
+        voData.put("tableComment",null != staticsTableInfos ? staticsTableInfos.get(0).getTableComments() : className);
         String filePath = FileUtil.getSourcePath() + StringUtil.package2Path(ConfigUtil.getConfiguration().getPackageName()) + StringUtil.package2Path(ConfigUtil.getConfiguration().getPath().getVo());
         String fileName = className + "Vo.java";
         // 生成dao文件
