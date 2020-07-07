@@ -10,7 +10,7 @@ import lombok.Data;
  * Date  ${Date}
  */
 @Data
-@ApiModel(value = "${ClassName}Req请求实体类",description = "${ClassName}Req请求实体类")
+@ApiModel(value = "${ClassName}Req请求实体类",description = "${tableComment}-请求实体类")
 public class ${ClassName}Req  {
 
     private static final long serialVersionUID = 1L;

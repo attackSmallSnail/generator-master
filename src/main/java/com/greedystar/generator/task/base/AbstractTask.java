@@ -24,6 +24,7 @@ public abstract class AbstractTask implements Serializable {
     protected String parentForeignKey;
     protected List<ColumnInfo> tableInfos;
     protected List<ColumnInfo> parentTableInfos;
+    public static List<ColumnInfo> staticsTableInfos;
 
     /**
      * Controller、Service、Dao
@@ -73,6 +74,7 @@ public abstract class AbstractTask implements Serializable {
         this.relationalTableName = relationalTableName;
         this.tableInfos = tableInfos;
         this.parentTableInfos = parentTableInfos;
+        staticsTableInfos = tableInfos;
     }
 
     public abstract void run() throws IOException, TemplateException;
