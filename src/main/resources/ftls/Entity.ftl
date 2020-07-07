@@ -7,11 +7,17 @@ import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Author ${Author}
  * Date  ${Date}
+ * Description ${tableComment}
  */
 @Data
+@ApiModel(value = "${ClassName}",description = "${tableComment}")
 public class ${ClassName} implements Serializable {
     private static final long serialVersionUID = 1L;
     ${Properties}

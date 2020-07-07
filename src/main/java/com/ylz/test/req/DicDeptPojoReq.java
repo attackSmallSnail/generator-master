@@ -7,11 +7,11 @@ import lombok.Data;
 
 /**
  * Author lcw
- * Date  2020-07-06
+ * Date  2020-07-07
  */
 @Data
-@ApiModel(value = "DrugListManPojoReq请求实体类",description = "DrugListManPojoReq请求实体类")
-public class DrugListManPojoReq  {
+@ApiModel(value = "DicDeptPojoReq请求实体类",description = "DicDeptPojoReq请求实体类")
+public class DicDeptPojoReq  {
 
     private static final long serialVersionUID = 1L;
 

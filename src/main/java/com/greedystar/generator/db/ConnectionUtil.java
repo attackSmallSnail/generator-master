@@ -1,12 +1,15 @@
 package com.greedystar.generator.db;
 
 
+import cn.hutool.json.JSONObject;
 import com.greedystar.generator.entity.ColumnInfo;
 import com.greedystar.generator.utils.ConfigUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Author GreedyStar
@@ -63,6 +66,22 @@ public class ConnectionUtil {
                 info = new ColumnInfo(metaData.getColumnName(i), metaData.getColumnType(i), false);
             }
             columnInfos.add(info);
+        }
+        sql = "select a.COLUMN_NAME,a.COMMENTS,b.COMMENTS as TABLE_COMMENT from user_col_comments a left join user_tab_comments b on a.TABLE_NAME=b.TABLE_NAME where a.TABLE_NAME='"+tableName+"'";
+        resultSet = statement.executeQuery(sql);
+        Map<String,String> columnMap = new HashMap<String,String>();
+        String tableComment = "";
+        while(resultSet.next()){
+            tableComment = resultSet.getString("TABLE_COMMENT");
+            columnMap.put(resultSet.getString("COLUMN_NAME"),resultSet.getString("COMMENTS"));
+        }
+//        System.out.println(columnMap);
+        for (ColumnInfo info: columnInfos){
+            info.setTableComments(tableComment);
+            if (null == columnMap.get(info.getColumnName()) || "".equals(columnMap.get(info.getColumnName())) ){
+                continue;
+            }
+            info.setComments(columnMap.get(info.getColumnName()));
         }
         statement.close();
         resultSet.close();

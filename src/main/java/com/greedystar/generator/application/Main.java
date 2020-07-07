@@ -56,8 +56,8 @@ public class Main {
 //                .build();
 //        invoker3.execute();
         Invoker invoker3 = new SingleInvoker.Builder()
-                .setTableName("DRUG_LIST_MAN")
-                .setClassName("DrugListManPojo")
+                .setTableName("DIC_DEPT")
+                .setClassName("DicDeptPojo")
                 .build();
         invoker3.execute();
 //        Invoker invoker4 = new SingleInvoker.Builder()

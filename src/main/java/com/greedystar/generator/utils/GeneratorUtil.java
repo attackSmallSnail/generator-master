@@ -23,10 +23,16 @@ public class GeneratorUtil {
     public static String generateEntityProperties(List<ColumnInfo> infos) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < infos.size(); i++) {
+            String comments = null == infos.get(i).getComments() ? "" : infos.get(i).getComments();
             if (i != 0) {
                 sb.append("    ");
             }
-            sb.append("private ").append(TypeUtil.parseTypeFormSqlType(infos.get(i).getType())).append(" ").append(infos.get(i).getPropertyName()).append(";\n");
+            sb.append("@ApiModelProperty(value = \""+comments+"\")\n");
+            if (TypeUtil.parseTypeFormSqlTypeIsDate(infos.get(i).getType())){
+                sb.append("    @JsonFormat(pattern = \"yyyy-MM-dd HH:mm:ss\", timezone = \"GMT+8\")\n");
+            }
+            sb.append("    ");
+            sb.append("private ").append(TypeUtil.parseTypeFormSqlType(infos.get(i).getType())).append(" ").append(infos.get(i).getPropertyName()).append(";\n\n");
         }
         return sb.toString();
     }
@@ -57,6 +63,11 @@ public class GeneratorUtil {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < infos.size(); i++) {
             if (infos.get(i).isPrimaryKey() || !infos.get(i).getColumnName().equals(foreignKey)) {
+                String comments = null == infos.get(i).getComments() ? "" : infos.get(i).getComments();
+                sb.append("    @ApiModelProperty(value = \""+comments+"\")\n");
+                if (TypeUtil.parseTypeFormSqlTypeIsDate(infos.get(i).getType())){
+                    sb.append("    @JsonFormat(pattern = \"yyyy-MM-dd HH:mm:ss\", timezone = \"GMT+8\")\n");
+                }
                 if (i != 0) {
                     sb.append("    ");
                 }
@@ -404,9 +415,9 @@ public class GeneratorUtil {
                 sb.append(infos.get(i).getPropertyName());
                 sb.append("!=null'>\n");
             }
-            if (i != 0) {
+//            if (i != 0) {
                 sb.append("        ");
-            }
+//            }
             String sqlType = "";
             if ("String".equals(TypeUtil.parseTypeFormSqlType(infos.get(i).getType()))){
                 sqlType = ",jdbcType=VARCHAR";

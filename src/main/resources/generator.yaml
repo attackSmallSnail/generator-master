@@ -1,4 +1,5 @@
 db:
+#  url: jdbc:oracle:thin:@127.0.0.1:1821:orcl
   url: jdbc:oracle:thin:@127.0.0.1:1821:orcl
   username: dss
   password: dssadmin

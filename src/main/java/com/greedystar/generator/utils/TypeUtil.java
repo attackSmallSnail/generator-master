@@ -81,4 +81,23 @@ public class TypeUtil {
         return sb.toString();
     }
 
+    public static boolean parseTypeFormSqlTypeIsDate(int sqlType) {
+        boolean isData = false;
+        switch (sqlType) {
+            case Types.DATE:
+                isData = true;
+                break;
+            case Types.TIME:
+                isData = true;
+                break;
+            case Types.TIMESTAMP:
+                isData = true;
+                break;
+            default:
+                isData = false;
+        }
+        return isData;
+    }
+
+
 }

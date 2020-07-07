@@ -13,6 +13,8 @@ public class ColumnInfo implements Serializable {
     private int type; // 类型代码
     private String propertyName; // 属性名
     private boolean isPrimaryKey; // 是否主键
+    private String comments; // 字段注释
+    private String tableComments; // 表注释
 
     public ColumnInfo() {
 
@@ -23,6 +25,14 @@ public class ColumnInfo implements Serializable {
         this.type = type;
         this.propertyName = StringUtil.columnName2PropertyName(columnName);
         this.isPrimaryKey = isPrimaryKey;
+    }
+
+    public ColumnInfo(String columnName, int type, boolean isPrimaryKey,String comments) {
+        this.columnName = columnName;
+        this.type = type;
+        this.propertyName = StringUtil.columnName2PropertyName(columnName);
+        this.isPrimaryKey = isPrimaryKey;
+        this.comments = comments;
     }
 
     public String getColumnName() {
@@ -55,5 +65,21 @@ public class ColumnInfo implements Serializable {
 
     public void setPrimaryKey(boolean primaryKey) {
         isPrimaryKey = primaryKey;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
+
+    public String getTableComments() {
+        return tableComments;
+    }
+
+    public void setTableComments(String tableComments) {
+        this.tableComments = tableComments;
     }
 }
