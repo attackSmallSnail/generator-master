@@ -21,7 +21,7 @@ import java.util.List;
  * Author ${Author}
  * Date  ${Date}
  */
-@Api(value = "${EntityName}Controller", description = "")
+@Api(value = "${EntityName}Controller", description = "${tableComment}-控制器")
 @RestController
 @RequestMapping(value = "/${EntityName}Controller",produces = "application/json; charset=utf-8")
 public class ${ClassName}Controller {

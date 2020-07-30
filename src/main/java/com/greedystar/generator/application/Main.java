@@ -56,8 +56,8 @@ public class Main {
 //                .build();
 //        invoker3.execute();
         Invoker invoker3 = new SingleInvoker.Builder()
-                .setTableName("DIC_DEPT")
-                .setClassName("DicDeptPojo")
+                .setTableName("IM_KAFKA_LOG")
+                .setClassName("ImKafkaLogPojo")
                 .build();
         invoker3.execute();
 //        Invoker invoker4 = new SingleInvoker.Builder()

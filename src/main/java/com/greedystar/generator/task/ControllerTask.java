@@ -42,6 +42,7 @@ public class ControllerTask extends AbstractTask {
         controllerData.put("Date", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         controllerData.put("ClassName", className);
         controllerData.put("EntityName", StringUtil.firstToLowerCase(className));
+        controllerData.put("tableComment",null != staticsTableInfos ? staticsTableInfos.get(0).getTableComments() : className);
         String filePath = FileUtil.getSourcePath() + StringUtil.package2Path(ConfigUtil.getConfiguration().getPackageName()) + StringUtil.package2Path(ConfigUtil.getConfiguration().getPath().getController());
         String fileName = className + "Controller.java";
         // 生成Controller文件
